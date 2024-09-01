@@ -1,7 +1,7 @@
 body {
     line-height: 1.6;
     background-color: #ede1c3;
-    padding: 20px;
+    padding: 5%;
 }
 
 main {
@@ -47,7 +47,7 @@ p {
 .slides {
     display: flex;
     width: calc(30% * 6); /* 6枚分のスライド */
-    animation: slide 180s infinite linear; /* 60秒で一周するように設定 */
+    animation: slide 180s infinite linear; 
 }
 
 .slide {
