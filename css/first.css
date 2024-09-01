@@ -46,8 +46,8 @@ p {
 
 .slides {
     display: flex;
-    width: calc(60% * 6); /* 6枚分のスライド */
-    animation: slide 120s infinite linear; /* 60秒で一周するように設定 */
+    width: calc(30% * 6); /* 6枚分のスライド */
+    animation: slide 180s infinite linear; /* 60秒で一周するように設定 */
 }
 
 .slide {
