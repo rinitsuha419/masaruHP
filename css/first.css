@@ -43,18 +43,12 @@ p {
     color: #333333;
 }
 
-table {
-    font-family: sans-serif;
-    font-size: 16px;
-    color: #333333;
-}
-
 .kuuhakuM {
-    font-size: 50px;
+    font-size: 60px
 }
 
 .kuuhakuS {
-    font-size: 35px;
+    font-size: 45px;
 }
 
 @keyframes infinity-scroll-left {
@@ -83,36 +77,3 @@ table {
     .scroll-infinity__item>img {
       width: 100%;
     }
-
-/* 
-.slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    width: calc(30% * 6); 
-    animation: slide 180s infinite linear; 
-}
-
-.slide {
-    width: calc(100% / 6); 
-    margin: 0 auto;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    16.67% { transform: translateX(-100%); }  
-    33.33% { transform: translateX(-200%); } 
-    50% { transform: translateX(-300%); }    
-    66.67% { transform: translateX(-400%); }  
-    83.33% { transform: translateX(-500%); }
-    100% { transform: translateX(-600%); }
-} */
