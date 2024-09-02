@@ -21,13 +21,32 @@ h2 {
     border-bottom: solid 1px #cccccc;
     font-family: sans-serif;
     font-size: 20px;
-    color: #444444;
+    color: #333333;
+}
+
+.profilepic {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.profile {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 70%;
+    color: #333333;
 }
 
 p {
     font-family: sans-serif;
     font-size: 16px;
-    color: #444444;
+    color: #333333;
+}
+
+table {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
 }
 
 .kuuhakuM {
@@ -38,6 +57,34 @@ p {
     font-size: 35px;
 }
 
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+      to {
+      transform: translateX(-100%);
+    }
+    }
+    .scroll-infinity__wrap {
+      display: flex;
+      overflow: hidden;
+    }
+    .scroll-infinity__list {
+      display: flex;
+      list-style: none;
+      padding: 0
+    }
+    .scroll-infinity__list--left {
+      animation: infinity-scroll-left 50s infinite linear 0.5s both;
+    }
+    .scroll-infinity__item {
+      width: calc(120vw / 6);   /* 120のとこで写真のサイズ変更可 */
+    }
+    .scroll-infinity__item>img {
+      width: 100%;
+    }
+
+/* 
 .slider {
     width: 100%;
     overflow: hidden;
@@ -46,12 +93,12 @@ p {
 
 .slides {
     display: flex;
-    width: calc(30% * 6); /* 6枚分のスライド */
+    width: calc(30% * 6); 
     animation: slide 180s infinite linear; 
 }
 
 .slide {
-    width: calc(100% / 6); /* 6枚のスライドの幅 */
+    width: calc(100% / 6); 
     margin: 0 auto;
 }
 
@@ -62,10 +109,10 @@ p {
 
 @keyframes slide {
     0% { transform: translateX(0); }
-    16.67% { transform: translateX(-100%); }  /* 60秒 x 1/6 */
-    33.33% { transform: translateX(-200%); }  /* 60秒 x 2/6 */
-    50% { transform: translateX(-300%); }     /* 60秒 x 3/6 */
-    66.67% { transform: translateX(-400%); }  /* 60秒 x 4/6 */
-    83.33% { transform: translateX(-500%); }  /* 60秒 x 5/6 */
-    100% { transform: translateX(-600%); }    /* 60秒 x 6/6 */
-}
+    16.67% { transform: translateX(-100%); }  
+    33.33% { transform: translateX(-200%); } 
+    50% { transform: translateX(-300%); }    
+    66.67% { transform: translateX(-400%); }  
+    83.33% { transform: translateX(-500%); }
+    100% { transform: translateX(-600%); }
+} */
