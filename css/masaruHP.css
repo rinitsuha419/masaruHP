@@ -46,8 +46,6 @@ div.pics {
 
 span.masarupic {
     display: inline-block;
-    width: 45%;
-    height: 45%;
     text-align: center;
     transition: 0.3s;
 }
@@ -56,8 +54,12 @@ span.masarupic:hover {
     opacity: 0.6;
 }
 
-img {
-    width: 70%;
+img.Yoko{
+    width: 40%;
+}
+
+img.Tate {
+    width: 30%;
 }
 
 p {
