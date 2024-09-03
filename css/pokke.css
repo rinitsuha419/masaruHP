@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ede1c3;
+    padding: 20px;
+}
+
+main {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333333;
+}
+
+.image-explain {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    max-width: 38%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hiduke {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 30px;
+    color: #333333;
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .div-container p {
+        font-size: 1em;
+    }
+}
