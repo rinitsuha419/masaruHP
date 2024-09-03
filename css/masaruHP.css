@@ -39,28 +39,35 @@ h2 {
     color: #333333;
 }
 
-div.pics {
-    margin-left: 30px;
-    margin-right: 30px;
+.pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列に分割 */
+    grid-auto-rows: auto; /* 行の高さは自動 */
+    gap: 5px; /* 画像間の隙間 (任意で調整可能) */
+    max-width: 100%; /* ギャラリーの最大幅 */
 }
 
-span.masarupic {
-    display: inline-block;
-    text-align: center;
-    transition: 0.3s;
+.pics img {
+    width: 85%; /* 各画像の幅を列の幅に合わせる */
+    height: auto; /* 画像の縦横比を維持 */
+    margin: 20px; /* 画像の外側に余白を追加 */
+    transition: opacity 0.3s ease; /* なめらかな変化を追加 */
 }
 
-span.masarupic:hover {
-    opacity: 0.6;
+.pics img:hover {
+    opacity: 0.7; /* マウスホバー時に半透明にする */
 }
 
-img.Yoko{
-    width: 40%;
+@media (max-width: 768px) {
+    .container-6{
+        gap:20px 3%;
+    }
+    .container-6 img {
+        width:48.5%; /* 2列に設定 */
+    }
 }
 
-img.Tate {
-    width: 30%;
-}
+
 
 p {
     font-family: sans-serif;
